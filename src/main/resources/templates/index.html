@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+	<title> City Info </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	
+</head>
+<body>
+	
+<div style="background-color : #F8F8F8;" >
+	<h1 th:text="${cityInfo.name}"> </h1>
+
+	<table th:object="${cityInfo}">
+		<tr> 
+			<td> ID </td>
+			<td th:text="${cityInfo.id}">     </td>
+		</tr>
+		
+		<tr>
+			<td> Name </td>
+			<td th:text="${cityInfo.name}">  </d>
+		</tr>
+		
+		<tr>
+			<td> Country Code </td>
+			<td th:text="${cityInfo.countryCode}">  </d>
+		</tr>
+		
+		<tr> 
+			<td> Country Name </td>
+			<td th:text="${cityInfo.countryName}">  </d>
+		</tr>
+		
+		<tr>
+			<td> District </td>
+			<td th:text="${cityInfo.district}">  </d>
+		</tr>
+		
+		<tr>
+			<td> Population </td>
+			<td th:text="${cityInfo.population}">  </d>
+		</tr>
+		
+		<tr>
+			<td> Local Weather </td>
+			<td th:text="${cityInfo.temp} "> °F </d>
+		</tr>
+		
+		<tr>
+			<td> Local Time </td>
+			<td th:text="${cityInfo.time}">  </d>
+		</tr>
+		
+
+	</table>
+	<br/> <br/>
+
+</div>
+</body>
+</html>
