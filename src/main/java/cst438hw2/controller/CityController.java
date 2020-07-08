@@ -25,6 +25,6 @@ public class CityController {
 		model.addAttribute("cityInfo", cityInfo);
 
 		return "index";
-	} 
+	}
 	
 }
